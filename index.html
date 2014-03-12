@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<title>Fast Word</title>
+		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<script src="http://localhost:8081/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<section id="wordapp">
+			<div id="user">
+				
+			</div>
+		</section>
+		<script type="text/template" id="home-screen">
+			<h1 class="title">Fast Word</h1>
+			<h2>Choose a game room...</h2>
+		</script>
+		<script type="text/template" id="room-select">
+			<div class="roomSelect">
+				<h1><%- title %></h1>
+				<h2>Players <%- components %></h2>
+				<a href="#/room/<%- _id %>">Entra en la sala</a>
+			</div>
+		</script>
+		<script type="text/template" id="add-room">
+			<h1>Or create a new one</h1>
+			<input type="text" placeholder="Room Name" id="name">
+		</script>
+		<script type="text/template" id="add-user">
+			<h1>Create a new user</h1>
+			<input type="text" placeholder="Pepito" id="username">
+		</script>
+		<script type="text/template" id="user-info">
+			<div class="userInfo">
+				<h1>Player <%- name %></h1>
+				<h2>Points: <%- points %></h2>
+				<h2>Played: <%- gamesPlayed %> </h2>
+			</div>
+		</script>
+		<script type="text/template" id="word">
+			<div id="theword">
+				<h1><%- answer %></h1>
+			</div>
+			<input id="answer" name="anser" placeholder="Answer"/>
+			<div id="you">
+				
+			</div>
+			<div id="p2">
+
+			</div>
+			<div id="p3">
+
+			</div>
+		</script>
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script src="bower_components/jquery/jquery.js"></script>
+		<script src="bower_components/underscore/underscore.js"></script>
+		<script src="bower_components/backbone/backbone.js"></script>
+		<script src="bower_components/backboneio/backbone.iosync.js"></script>
+		<script src="bower_components/backboneio/backbone.iobind.js"></script>
+		<script src="bower_components/backbone.localStorage/backbone.localStorage.js"></script>
+		<script src="js/models/room.js"></script>
+		<script src="js/models/word.js"></script>
+		<script src="js/collections/rooms.js"></script>
+		<script src="js/collections/words.js"></script>
+		<script src="js/views/select-view.js"></script>
+		<script src="js/views/room-view.js"></script>
+		<script src="js/views/app-view.js"></script>
+		<script src="js/routers/router.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

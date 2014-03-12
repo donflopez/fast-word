@@ -1,0 +1,77 @@
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #eaeaea url('bg.png');
+	color: #4d4d4d;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+button,
+input[type="checkbox"] {
+  outline: none;
+}
+
+section#wordapp {
+	padding: 30px;
+}
+
+h1.title {
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 100;
+	font-size: 5em;
+	margin-bottom: 35px;
+}
+
+#theword {
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 200;
+	font-size: 5em;
+	margin-bottom: 35px;
+}
+
+.userInfo {
+	display: inline-block;
+}
+
+.userInfo h1{
+	font-weight: 200;
+	font-size: 2em;
+}
+
+.userInfo h2{
+	font-weight: 100;
+	font-weight: 1.5em;
+}
+
+.roomSelect {
+	display: inline-block;
+}
+
+.roomSelect h1{
+	font-weight: 200;
+	font-size: 2em;
+}
+
+.roomSelect h2{
+	font-weight: 100;
+	font-weight: 1.5em;
+}
+
+.roomSelect a{
+	font-weight: 150;
+	font-weight: 1.5em;
+	color: #c30;
+}
